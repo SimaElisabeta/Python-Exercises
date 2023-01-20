@@ -34,3 +34,21 @@ else:
             print('*', end=' ')
         print()
 print('The end!')
+
+nr_el = 11
+magic_number = (nr_el // 2)
+x_del = 0
+
+for i in range(magic_number + 1):
+    for k in range(magic_number - i, 0, -1):
+        print(' ', end=' ')
+    for j in range(1 + (2 * i)):
+        print('*', end=' ')
+    print()
+for i in range(magic_number - 1, -1, -1):
+    for k in range(magic_number - i, 0, -1):
+        print(' ', end=' ')
+    for j in range(1 + (2 * i)):
+        print('*', end=' ')
+    print()
+print('The end!')
