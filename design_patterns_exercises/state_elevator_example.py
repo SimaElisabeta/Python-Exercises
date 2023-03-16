@@ -1,3 +1,17 @@
+"""
+STATE - is a behavioral design pattern that allows an object to change the behavior when its internal state changes.
+* Usage examples: The State pattern is commonly used in Python to convert massive switch-base state machines into objects.
+* Identification: State pattern can be recognized by methods that change their behavior depending on the objects state, controlled externally.
+
+
+PROS:
+    * Single Responsibility Principle. Organize the code related to particular states into separate classes.
+    * Open/Closed Principle. Introduce new states without changing existing state classes or the context.
+    * Simplify the code of the context by eliminating bulky state machine conditionals.
+CONS:
+    * Applying the pattern can be overkill if a state machine has only a few states or rarely changes.
+"""
+
 from __future__ import annotations
 from abc import ABC, abstractmethod
 
